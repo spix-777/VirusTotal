@@ -12,13 +12,13 @@ This is a command-line tool written in Go that interacts with the VirusTotal API
 1. Clone the repository:
 
 ```shell
-git clone https://github.com/your-repo.git
+git clone https://github.com/spix-777/VirusTotal
 ```
 
 2. Change into the project directory:
 
 ```shell
-cd your-repo
+cd VirusTotal
 ```
 
 3. Build the executable:
@@ -30,11 +30,10 @@ go build
 ## Usage
 
 ```shell
-./your-repo -f <filename> -apikey <api_key> [-v]
+./VirusTotal -f <filename> [-v]
 ```
 
 - `-f <filename>`: Specifies the path to the file for which to calculate the SHA256 checksum and scan.
-- `-apikey <api_key>`: Specifies your VirusTotal API key.
 - `-v`: Prints the version information.
 
 ## Examples
@@ -42,13 +41,13 @@ go build
 Calculate the SHA256 checksum and scan a file:
 
 ```shell
-./your-repo -f /path/to/file -apikey YOUR_API_KEY
+./VirusTotal -f /path/to/file
 ```
 
 Print the version information:
 
 ```shell
-./your-repo -v
+./VirusTotal -v
 ```
 
 ## License
